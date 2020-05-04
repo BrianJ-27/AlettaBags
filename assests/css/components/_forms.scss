@@ -1,0 +1,308 @@
+// **************************************
+//FORMS
+// **************************************
+
+::placeholder {
+	padding-left: 0.2em;
+}
+
+textarea::placeholder {
+	padding-top: 0.3em;
+}
+
+.wpforms-submit-container > button {
+	width: 100%;
+	@include mq("md") {
+		width: 50%;
+	}
+	@include mq("lg") {
+		width: 30%;
+	}
+}
+
+.wpforms-container ul {
+	@include flex_me($dir: column, $vertAlign: center);
+	@include mq("md") {
+		@include flex_me($dir: row);
+	}
+}
+/*------------Mobile ContactUs Styles----------*/
+
+.contactUs {
+	@include flex_me($dir: column, $vertAlign: center);
+}
+
+.wpforms-image-choices-label {
+	display: none;
+}
+
+.wpforms-field-hp {
+	display: none;
+}
+
+#wpforms-134-field_0-container {
+	border-top: 1.5px solid #000;
+}
+
+/* image choices styling */
+.choice-1,
+.depth-1 {
+	@include flex_me();
+	color: #000;
+}
+
+.wpforms-container .wpforms-list-inline .wpforms-image-choices-modern li {
+	border: 1px solid #47999b;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		background-color: #47999b !important;
+		box-shadow: 0 10px 6px -6px rgba(102, 51, 153, 0.8);
+	}
+}
+
+/* Newsletter styling on frontpage */
+
+#wpforms-107-field_1-container {
+	@include mq("md") {
+		margin: 0 auto;
+		width: 50%;
+	}
+}
+
+#wpforms-107-field_3-container {
+	@include mq("md") {
+		margin: 0 auto;
+		width: 60%;
+	}
+}
+
+//check box styling in the newsletter on front page
+#wpforms-107-field_3_1 {
+	width: fit-content;
+}
+
+//label styling in the newsletter on front page
+label[for="wpforms-107-field_3_1"] {
+	color: #fff;
+	line-height: 1.5;
+}
+
+// subscribe title info in newsletter section
+.wpforms-field-label-inline {
+	text-align: left;
+}
+
+.wpforms-validate {
+	@include flex_me($dir: column, $vertAlign: center);
+	width: 90%;
+	border-top: 5px solid $accent-color;
+	padding-top: 1.5px;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	margin: 0 auto;
+	@include mq("md") {
+		width: 60%;
+	}
+	@include mq("lg") {
+		width: 50%;
+	}
+}
+
+.wpforms-error {
+	color: red;
+	padding-top: 0.5em;
+}
+
+.wpforms-field-container > div,
+#wpforms-134-field_0-container {
+	width: 100%;
+	padding: 1em 0;
+}
+
+// form info
+.wpforms-field-container,
+#wpforms-134-field_0-container,
+#wpforms-134-field_1-container,
+#wpforms-134-field_3-container,
+#wpforms-140-field_0-container,
+#wpforms-140-field_3-container,
+#wpforms-140-field_4-container,
+#wpforms-140-field_5-container {
+	@include flex_me($dir: column, $wrap: wrap);
+	@include mq("md") {
+		@include flex_me($dir: row, $just: center, $wrap: wrap);
+	}
+}
+
+#wpforms-134-field_5-container {
+	padding-bottom: 1em;
+}
+
+.wpforms-field ul li {
+	list-style-type: none;
+}
+.wpforms-field ul li label {
+	padding-left: 0.7em;
+}
+
+// divider between form groups
+#wpforms-134-field_5-container,
+#wpforms-134-field_11-container,
+#wpforms-134-field_13-container,
+#wpforms-140-field_5-container {
+	border-bottom: 1px solid #000;
+}
+
+#wpforms-140-field_2-container {
+	border-top: 1px solid #000;
+}
+
+// making the forms labels bolder
+#wpforms-134-field_11-container > label,
+#wpforms-134-field_12-container > label,
+#wpforms-134-field_2-container > label,
+#wpforms-134-field_13-container > label {
+	font-weight: 600;
+	margin-bottom: 0.8em;
+}
+
+// making the name email and form labels sit next to each other when on tablet mode or higher
+#wpforms-134-field_0-container > label,
+#wpforms-134-field_3-container > label,
+#wpforms-134-field_1-container > label {
+	@include mq("md") {
+		flex-basis: 25%;
+		margin: auto 0;
+	}
+}
+// making the name email and form fields sit next to each other when on tablet mode or higher
+#wpforms-134-field_0-container > input,
+#wpforms-134-field_1-container > input,
+#wpforms-134-field_3-container > input {
+	@include mq("md") {
+		flex-basis: 75%;
+	}
+}
+
+/*=-=-=Customer Support Page styles-=-=*/
+
+.aletta__contact {
+	color: $base-color;
+}
+// making the name email and form labels sit next to each other when on tablet mode or higher
+#wpforms-140-field_0-container > label,
+#wpforms-140-field_3-container > label,
+#wpforms-140-field_4-container > label,
+#wpforms-140-field_5-container > label,
+#wpforms-140-field_6-container > label {
+	@include mq("md") {
+		flex-basis: 25%;
+		margin: auto 0;
+	}
+}
+
+// making the name email and form fields sit next to each other when on tablet mode or higher
+#wpforms-140-field_0-container > input,
+#wpforms-140-field_3-container > input,
+#wpforms-140-field_4-container > input,
+#wpforms-140-field_5-container > input,
+#wpforms-140-field_6-container > input {
+	@include mq("md") {
+		flex-basis: 75%;
+	}
+}
+
+#wpforms-140-field_0-container > label,
+#wpforms-140-field_1-container > label,
+#wpforms-140-field_5-container > label,
+#wpforms-140-field_6-container > label,
+#wpforms-140-field_8-container > label,
+#wpforms-140-field_9-container > label,
+#wpforms-140-field_4-container > label {
+	padding: 0.5em 0;
+}
+
+// customer comment and contact # styling
+.form__comment,
+.form__contact_number {
+	padding: 0 1.5em;
+	@include mq("md") {
+		width: 60%;
+		margin: 0 auto;
+		padding: 0 0;
+	}
+	@include mq("lg") {
+		width: 50%;
+	}
+}
+
+.form__comment {
+	padding-bottom: 1em;
+	text-align: justify;
+}
+
+.form__contact_number {
+	padding-bottom: 0.5em;
+}
+
+// File upload section
+div.wpforms-container div.wpforms-uploader {
+	border-radius: 15px !important;
+	color: #000 !important;
+	border: 2px solid #47999b;
+	transition: all 0.4s ease-in-out;
+	margin-bottom: 0.8em;
+	&:hover {
+		background-color: #47999b !important;
+		color: #fff !important;
+	}
+}
+
+// Thank you message container for after user submits form
+.wpforms-confirmation-container,
+#wpforms-confirmation-134 {
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #47999b;
+	width: 85%;
+	margin: 1em auto;
+	border-radius: 10px;
+}
+
+// The message p elements inside the container
+.wpforms-confirmation-container p,
+#wpforms-confirmation-134 p {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 1.7;
+}
+
+textarea,
+.wpforms-field-large {
+	@extend %form-field;
+}
+
+#wpforms-134-field_2 {
+	height: 7em;
+}
+
+// download svg icon
+svg[focusable="false"] {
+	fill: #000;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	box-shadow: 0 0 5px $base-color;
+	outline: $base-color;
+	transition: background-color 0.7s ease-out;
+}
+
+input[id="mc-embedded-subscribe"] {
+	width: 100%;
+}

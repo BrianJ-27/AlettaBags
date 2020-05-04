@@ -1,0 +1,19 @@
+/*!
+  Theme Name: Aletta Bags
+  Author: Brian Johnson
+  Version: 1.0
+  Description: Beautifully Crafted and Custom-Made HandBags and more. She is a force of one and her bags are a classic and modern fusion. Aletta also designs wallets and puts together exclusive sets
+*/
+
+
+// **************************************
+// MAIN SASS FILE TO IMPORT PARTIALS
+// **************************************
+
+
+// NOTE: import utilities and base partials here:
+@import 'utilities/index';
+@import 'base/index';
+
+// import components/pages partials
+@import 'components/index';

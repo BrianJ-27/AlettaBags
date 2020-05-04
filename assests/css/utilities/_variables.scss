@@ -1,0 +1,41 @@
+// **************************************
+// GLOBAL VARIABLES
+// **************************************
+
+//Base Colors
+    $white: #fff;
+    $base-color:  #663399;
+    $base-color-light: lighten($base-color, 25%);
+    $base-color-lightest: lighten($base-color, 50%);
+    $base-color-dark: darken($base-color, 25%);
+
+//Accent Colors
+    $accent-color: #0E8C8F;
+
+//Button Colors
+    $color-link-button-default: #69F6FF;
+    $button-success: #09E827;
+    $button-error: #D13219;
+    $button-warning: #FF760D;
+    $button-info: #693D80;
+
+//layout
+    $max-width: 1200px;
+
+//Font Stacks
+    @import url('https://fonts.googleapis.com/css?family=Diplomata+SC&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Dosis');
+    
+    $font-google-primary: 'Dosis', sans-serif ;
+    $font-google-main-title: 'Diplomata SC', cursive;
+    $font-secondary: 'Helvetica' sans-serif;
+    $base-font-size: 16px;
+    $font-color: #8c8c8c;
+    $font-color-secondary: #606060;
+
+// Media Query Breakpoint Map
+$breakpoints: (
+    'sm': 320px,    
+    'md': 768px,
+    'lg': 1024px,
+    );

@@ -1,0 +1,86 @@
+// **************************************
+// EXTENDS
+// **************************************
+/* Provived Padding and curved borders for     buttons/grid items*/
+%padding {
+    padding: .5em;
+    border-radius: 5px;
+  }
+
+//styles for all form-fields
+
+%form-field{
+  background-color: #F2F2F5;
+  border-radius: 5px;
+  height: 2em
+}
+
+//Button Items only
+  %btn{
+    background-color: #fff;
+    padding: 10px 0 !important;
+    font-weight: bold !important;
+    font-size: 1.25em !important;
+    outline: none !important;
+    border-radius: 15px !important;
+    color: #000 !important;
+    border: 2px solid #0E8C8F;
+    transition: all .4s ease-in-out;
+    &:hover{
+      background-color: #47999b !important;
+      color: #fff !important; 
+    }
+    &:link{
+      background-color: #47999b !important;
+      color: #fff !important;
+    }
+  }
+
+//Links
+  %link-love{
+    text-decoration: none;
+  }
+
+// Nav Items
+  %nav-properties{
+    align-self: flex-start;
+    list-style: none;
+  }
+
+// Heading Title Properties
+  %title-properties{
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center; 
+  }
+
+// Gallery Overlay Title Styles
+%gallery-title{
+  color: #0E8C8F;
+  background: white;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 15px 0 15px 0;
+  width: 80%;
+}
+
+//Customer Title Styles
+%customer-title{
+  font-size: 1.3em;
+  font-weight: 500;
+  color: inherit;
+  background: inherit;
+  width: 100%;
+}
+
+%text-content{
+  line-height: 1.4em;
+  text-align: center;
+}
+
+// Center Images
+  %centered {
+    display: block;
+    margin: 0 auto;
+  }

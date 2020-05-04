@@ -1,0 +1,28 @@
+// **********************************************
+// _grid.scss
+// styles related to the grid system and
+// main container.
+// major grid styles have been added here for you
+// but additional styling may be needed
+// **********************************************
+
+/*------------Layout Container Styles----------*/
+.main_container {
+	max-width: 75em;
+	margin: 0 auto;
+	padding: 3em 0 0 0;
+	padding-bottom: 2em;
+}
+
+.flex_container {
+	@include flex_me($dir: column, $wrap: wrap, $vertAlign: center);
+	@include mq("md") {
+		@include flex_me($dir: row, $wrap: wrap);
+	}
+}
+
+.lg-thumb-outer {
+	@include mq("md") {
+		@include flex_me($wrap: wrap, $just: center);
+	}
+}

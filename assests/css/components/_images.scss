@@ -1,0 +1,109 @@
+// **************************************
+//IMAGES
+// **************************************
+
+/*------------Nav SVG Icon Styles----------------*/
+
+.nav-icons{
+  fill: $white;
+  transition: fill .3s ease-in;
+  &:hover{
+    fill: $base-color;
+  }
+}
+
+/*------------Banner Styles----------------------*/
+
+//Logo Image Styles
+.logo_img{
+  position: relative;
+    width: 200px;
+  height: 100%;
+  margin: 0 auto;
+  @include mq('md'){
+    width: 130px;
+  }
+  @include mq('lg'){
+    width: 200px;
+  }
+}
+
+
+//blurs logo image onload
+.blur{
+  animation: blur 2.5s ;
+}
+
+@keyframes blur{
+ 0%, 100% {
+    -webkit-filter: blur(10px);
+    opacity: 0;
+  }
+  100%{
+    -webkit-filter: blur(0px);
+    opacity: 1;
+  } 
+}
+
+.banner_img{
+  width: 100%;
+}
+
+/*------------Select Your Bag Styles----------*/
+
+
+//bigger featured bag image
+  .gallery_feature--img{
+    object-fit: cover;
+    height: 300px;
+      width: 300px;
+    @include mq('md'){
+      height: 250px;
+      width: 250px;
+    }
+  }
+
+  //thumbnail bag image styles
+  .gallery__thumb--pic{
+    object-fit: cover;
+    // padding: 0 0;
+    height: 60px;
+    width: 60px;
+    @include mq('md'){
+      height: 50px;
+      width:  50px;
+    }
+  }
+
+
+  /*------------Customer Review Styles----------*/
+  
+  // Customer Image Styles
+  .img__avatar img{
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    border: 5px solid $accent-color;
+  }
+
+ 
+   /*------------Who Am I Styles----------*/
+
+   img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+   #img__wrapper{
+    @include flex_me();
+    width: 100%;
+    height: 100%;
+    @include mq('md'){
+        width: 40%;
+        margin: 0;
+    }
+}
+
+
+

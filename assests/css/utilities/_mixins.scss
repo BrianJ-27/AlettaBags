@@ -1,0 +1,64 @@
+// **************************************
+// MIXINS
+// **************************************
+
+//Image Style Properties
+@mixin img_properties(
+  $height: null,
+  $width: null,
+  $br-radius: null,) 
+{
+  display: block;
+  height: $height;
+  width: $width;
+  border-radius: $br-radius;
+}
+
+
+ @mixin link_styles($link:null, $visited:null, $hover:null, $active:null) {
+  & {
+      color: $link;
+      &:visited {
+          color: $visited;
+      }
+      &:hover {
+          color: $hover;
+      }
+      &:active, &:focus {
+          color: $active;
+      }
+  }
+}
+
+ //Create a flex container
+ @mixin flex_me(
+   $dir: null,
+   $wrap: null,
+   $just: null,
+   $vertAlign: null,
+   $horznAlign: null)
+   {
+     display: flex;
+     flex-direction: $dir;
+     flex-wrap: $wrap;
+     justify-content: $just;
+     align-items: $vertAlign;
+     align-self: $horznAlign;
+   }
+
+// Media Query
+@mixin mq($break){
+  $value: map-get($breakpoints, $break);
+  $sm: map-get($breakpoints, 'sm');
+
+  @if $value < $sm {
+    @media (max-width: $value){
+      @content;
+    }
+  }
+  @else {
+    @media (min-width: $value){
+      @content;
+   }
+  }
+}

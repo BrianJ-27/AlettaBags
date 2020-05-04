@@ -1,0 +1,32 @@
+// **************************************
+//HEADER
+// **************************************
+
+/*------------Mobile , Tablet, & Desktop Top Header Styles----------*/
+
+.image_and_slogan{
+  @include flex_me($dir: column, $vertAlign:center, $just:center);
+ 
+}
+
+ .logo_and_tagline{
+    width: 100%;
+    @include flex_me($dir:column, $just:center, $vertAlign:center);
+    position: relative;
+    // background: linear-gradient(to bottom right, #0E8C8F 25%, #fff 71%);
+    border-bottom: black;
+    @include mq('md'){
+      padding: 3em 0;
+      border-radius: 5px;
+      position: absolute;
+      left: 5%;
+      top: 50px; 
+      width: 250px;
+      background: rgba(255, 255, 255, 0.5);
+    }
+    @include mq('lg'){
+      position: absolute;
+      top: 30px; 
+      width: 350px;
+    }
+ }

@@ -1,0 +1,63 @@
+/*------------Footer Styles----------*/
+#footer {
+    width: 100%;
+    background-color: #302F30;
+    position: relative;
+      bottom: 0;
+    
+    }
+
+    .footer_container{
+      @include flex_me($dir:column);
+      padding: 2.5em 0 1em 0;
+      @include mq('md'){
+        @include flex_me($dir:row, $wrap:wrap, $just:space-around);
+      }
+    }
+
+    .col_footer{
+      @include mq('md'){
+        width: 33.33%;
+      }  
+    }
+
+    .col_footer:first-child{
+      @include mq('md'){
+      border-right: 1px solid white;
+     }
+    }
+
+    .social_footer{
+      @include mq('md'){
+        border-left: 1px solid white;
+       }
+    }
+    
+    .footer__link-container{
+      @include flex_me($dir:column, $vertAlign:center);  
+    }
+  
+    .main_footer,
+    .flex_footer {
+      padding: 10px 0;
+    }
+
+     .fab, .fa-facebook,
+     .fab .fa-instagram,
+     .fab .fa-etsy,
+     .fab .fa-pinterest{
+      margin-right: 5px;
+    }
+    
+    .etsy-link{
+      margin-right: 48px;
+    }
+  
+    .insta-link{
+      margin-left: 5px;
+    }
+
+    .bottomFooter{
+      padding: 1em 0;
+      margin: 0 auto;
+    }

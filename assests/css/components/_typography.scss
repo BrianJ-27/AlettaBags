@@ -1,0 +1,140 @@
+// **************************************
+//TYPOGRAPHY
+// **************************************
+//Company Name 
+.company__name{
+  font-family: $font-google-main-title;
+  color: #000;
+  font-size: 2em;
+  display: block;
+  text-align: center;
+}
+
+//Logo Tagline Title
+.title__primary{
+  @extend %title-properties;
+  font-size: .75em;
+  padding: 0 1em;
+   @include mq('md'){
+    font-size: .5em;
+    font-weight: bold;
+  }
+  @include mq('lg'){
+    font-size: .8em;
+  }
+}
+
+//h2 Section Titles
+.title__secondary,
+.customer__title {
+  @extend %title-properties;
+  font-size: 1em;
+}
+
+//h3 Content Titles
+.title__tertiary,
+.customer__name{
+  @extend %title-properties;
+  text-align: center;
+  font-size: .95em;
+  font-weight: bold;
+}
+
+.title__quaternary{
+  text-align: center;
+}
+
+.owner__name{
+  font-size: 1.4em;
+  color: $white;
+
+  @include mq('md'){
+    margin: 0 auto;
+  }
+
+  @include mq('lg'){
+   padding: 1em;
+  }
+  
+}
+
+.owner__title{
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  text-align: center;
+  @include mq('lg'){
+    font-size: 1.4em;
+   }
+}
+
+.owner__text{
+  text-align: justify;
+  padding: 1em;
+  @include mq('lg'){
+    font-size: 1.2em;
+   }
+}
+
+.bio__title{
+  width: 100%;
+}
+
+.g-title{
+  @extend %gallery-title;
+}
+
+//Photo Overlay Text
+.text__content,
+.customer__content{
+  @extend %text-content; 
+  font-size: 1.2em;
+  @include mq('md'){
+   font-size: 1.1em;
+  }
+}
+
+.txt_jstfy{
+  text-align: justify;
+}
+
+.bold{
+  font-weight: bolder;
+}
+
+.white_txt{
+  color: $white; 
+}
+
+// Customer Title Styles
+.customer{
+ @extend %customer-title;
+}
+
+//footer SubTitle Styles
+.footer_title{
+  text-align: center;
+  color: $accent-color;
+  font-size: 1.5em;
+}
+
+//Privacy Sub Page Styles
+// First line of privacy policy page
+#first_line{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+#first__heading{
+  text-align: center;
+}
+
+.subscribe__title{
+  padding: 0 0 1em;
+  font-size: 1.5em;
+  width: 100%;
+  color: $white;
+  text-align: center;
+  margin-bottom: 0;
+}

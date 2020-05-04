@@ -1,0 +1,78 @@
+/*------GLOBAL RESET/BASE STYLES--------*/
+* {
+	box-sizing: border-box;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+body {
+	overflow-x: hidden;
+	font-size: 1em;
+	min-height: 100vh;
+	background-color: #f2f2ef;
+	font-family: "Quicksand", "Playfair Display", sans-serif;
+	text-rendering: optimizeLegibility;
+}
+
+main {
+	background: $white;
+	margin-top: -0.95em;
+}
+
+svg {
+	width: 2.5em;
+	height: 2.5em;
+}
+
+p {
+	text-align: left;
+	line-height: 1.5em;
+	letter-spacing: 0px;
+	@include mq("md") {
+		text-align: left;
+	}
+}
+
+p + p {
+	margin: 1em 0;
+}
+
+p > a {
+	margin-bottom: 1em;
+}
+
+a {
+	@extend %link-love;
+	color: $base-color;
+}
+
+blockquote {
+	text-align: center;
+}
+
+/*------------Heading Styles-------------------*/
+
+h2 {
+	margin: 1em 0;
+	padding: 1em 0.5em;
+	&:after {
+		display: block;
+		height: 2px;
+		background-color: $accent-color;
+		content: " ";
+		width: 140px;
+		margin: 0 auto;
+		margin-top: 0.8em;
+	}
+}
+
+.woocommerce-loop-product__title {
+	&::after {
+		display: none;
+	}
+}
+
+h3,
+h4 {
+	margin: 2em 0;
+}

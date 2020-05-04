@@ -1,0 +1,104 @@
+// **************************************
+//NAVIGATION
+// **************************************
+
+//=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+// Site Navigation Styles               //
+//=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+.side-nav,
+.hamburger-menu{
+  position: fixed;
+}
+
+.side-nav{
+  @include flex_me($vertAlign:center, $just:center );
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    border-radius: 10% 0 0% 70%;
+    background: rgba(96, 96, 96, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.nav-bar{
+  transform: translateX(150px);
+}
+
+
+#site__wrapper{
+  transition: 0.5s;
+}
+
+.nav__item{
+  @extend  %nav-properties;
+  @include flex_me($vertAlign:center);
+  margin: 0 0 0 2.5em;
+  padding: 1em 0;
+  cursor: pointer;
+}
+
+//hamburger menu styles
+.hamburger-menu{
+    @include flex_me($just:space-around, $vertAlign:center);
+    // padding-bottom: 80px;
+    z-index: 2;
+    height: 80px;
+    width: 80px;
+    top: 10px;
+    right: -15px;
+    margin-right: 20px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+//the 3 horizontal hamburger lines
+.line{
+  position: absolute;
+  top: 9.8px;
+  right: 4.2px;
+  height: 3px;
+  width: 40px;
+  background: $base-color;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+//The first horizontal hamburger line
+.line1{
+  transform:translateY(-10px);
+  top: 10px;
+}
+//The third horizontal hamburger line
+.line3{
+  transform:translateY(10px);
+}
+
+//when clicked the 1st line turns and shifts clockwise
+.change .line1{
+  transform: translateY(5px) rotate(-45deg);
+}
+
+//when clicked the second hamburger line disappears
+.change .line2{
+  opacity: 0;
+}
+
+//when clicked the 3rd line turns and shifts clockwise forming the X look
+.change .line3{
+  transform: translateY(5px) rotate(45deg);
+}
+
+.change-side-nav{
+  width: 200px;
+}
+
+
+
+
+
+
+

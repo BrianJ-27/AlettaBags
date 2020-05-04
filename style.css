@@ -1,0 +1,1733 @@
+/*!
+  Theme Name: Aletta Bags
+  Author: Brian Johnson
+  Version: 1.0
+  Description: Beautifully Crafted and Custom-Made HandBags and more. She is a force of one and her bags are a classic and modern fusion. Aletta also designs wallets and puts together exclusive sets
+*/
+@import url("https://fonts.googleapis.com/css?family=Diplomata+SC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+/* Provived Padding and curved borders for     buttons/grid items*/
+textarea,
+.wpforms-field-large {
+  background-color: #F2F2F5;
+  border-radius: 5px;
+  height: 2em;
+}
+
+.wpforms-submit-container > button {
+  background-color: #fff;
+  padding: 10px 0 !important;
+  font-weight: bold !important;
+  font-size: 1.25em !important;
+  outline: none !important;
+  border-radius: 15px !important;
+  color: #000 !important;
+  border: 2px solid #0E8C8F;
+  transition: all .4s ease-in-out;
+}
+
+.wpforms-submit-container > button:hover {
+  background-color: #47999b !important;
+  color: #fff !important;
+}
+
+.wpforms-submit-container > button:link {
+  background-color: #47999b !important;
+  color: #fff !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav__item {
+  align-self: flex-start;
+  list-style: none;
+}
+
+.title__primary, .title__secondary,
+.customer__title, .title__tertiary,
+.customer__name {
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.g-title {
+  color: #0E8C8F;
+  background: white;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 15px 0 15px 0;
+  width: 80%;
+}
+
+.customer {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: inherit;
+  background: inherit;
+  width: 100%;
+}
+
+.text__content,
+.customer__content {
+  line-height: 1.4em;
+  text-align: center;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/*------GLOBAL RESET/BASE STYLES--------*/
+* {
+  box-sizing: border-box;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 1em;
+  min-height: 100vh;
+  background-color: #f2f2ef;
+  font-family: "Quicksand", "Playfair Display", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  background: #fff;
+  margin-top: -0.95em;
+}
+
+svg {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+p {
+  text-align: left;
+  line-height: 1.5em;
+  letter-spacing: 0px;
+}
+
+@media (min-width: 768px) {
+  p {
+    text-align: left;
+  }
+}
+
+p + p {
+  margin: 1em 0;
+}
+
+p > a {
+  margin-bottom: 1em;
+}
+
+a {
+  color: #663399;
+}
+
+blockquote {
+  text-align: center;
+}
+
+/*------------Heading Styles-------------------*/
+h2 {
+  margin: 1em 0;
+  padding: 1em 0.5em;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #0E8C8F;
+  content: " ";
+  width: 140px;
+  margin: 0 auto;
+  margin-top: 0.8em;
+}
+
+.woocommerce-loop-product__title::after {
+  display: none;
+}
+
+h3,
+h4 {
+  margin: 2em 0;
+}
+
+/*------------Mobile , Tablet, & Desktop Top Header Styles----------*/
+.image_and_slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_and_tagline {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: black;
+}
+
+@media (min-width: 768px) {
+  .logo_and_tagline {
+    padding: 3em 0;
+    border-radius: 5px;
+    position: absolute;
+    left: 5%;
+    top: 50px;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo_and_tagline {
+    position: absolute;
+    top: 30px;
+    width: 350px;
+  }
+}
+
+/*------------Banner Styles----------*/
+.promotion {
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+/*------------Featured Gallery Styles----------*/
+#featured-bags {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  #featured-bags {
+    flex-direction: row;
+  }
+}
+
+#featured-bags > h2 {
+  width: 100%;
+}
+
+.gallery__container {
+  margin: 0 auto 2em auto;
+  position: relative;
+  transform: scale(1);
+  transition: transform 0.4s ease-out;
+}
+
+.gallery__container p {
+  width: 85%;
+}
+
+@media (min-width: 768px) {
+  .gallery__container {
+    width: 240px;
+  }
+}
+
+.gallery__container:hover {
+  transform: scale(1.1);
+}
+
+.gallery__overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(102, 51, 155, 0.5);
+  transition: opacity 0.6s;
+}
+
+@media (min-width: 768px) {
+  .gallery__overlay {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/*------------Testimonial Styles----------*/
+.testimonials {
+  height: auto;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(rgba(102, 51, 153, 0.8), rgba(102, 51, 153, 0.8));
+  filter: drop-shadow(8px 8px 10px gray);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+@media (min-width: 768px) {
+  .reviews__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 85%;
+  line-height: 1.5em;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    display: flex;
+    width: 33.33%;
+  }
+  .reviews p {
+    text-align: justify;
+    font-size: 0.95em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .reviews {
+    font-size: 1em;
+  }
+  .reviews p {
+    width: 80%;
+    text-align: justify;
+    font-size: 1em;
+  }
+}
+
+/*------------Mobile Instagram Photos Styles----------*/
+#showCase {
+  display: block;
+}
+
+/*------------Mobile About Aletta Styles----------*/
+.bio__container {
+  background-color: #663399;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .bio__container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.bio__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em 1em;
+}
+
+.bio__content-wrapper p {
+  margin: auto;
+  line-height: 1.8em;
+}
+
+.bio__content-wrapper p::first-letter {
+  color: #000;
+  float: left;
+  font-family: Georgia;
+  font-size: 5em;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+@media (min-width: 768px) {
+  .bio__content-wrapper {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bio__content-wrapper {
+    width: 45%;
+  }
+}
+
+iframe {
+  max-width: 18em;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  iframe {
+    max-width: 22em;
+    margin: 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  iframe {
+    max-width: 35em;
+  }
+}
+
+/*------------Newsletter Styles----------*/
+.newsletter {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/anna-hamilton-e5IMVSjZ1dA-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2em;
+  margin: 1em;
+}
+
+@media (min-width: 768px) {
+  .newsletter {
+    margin: 1em 3em;
+  }
+}
+
+/*-----General Sub Page Styles-----*/
+.page-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em 1em 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .page-wrapper .col {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+col p + p {
+  margin: 1em 0;
+}
+
+.page__list,
+.numbered__list {
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 1em;
+}
+
+.page__list li,
+.numbered__list li {
+  margin: .5em;
+  line-height: 1.5em;
+}
+
+address:nth-of-type(3) {
+  margin-bottom: 1em;
+}
+
+/*------Who I am Aletta Styles------*/
+.aletta_bio {
+  margin: 3em auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #663399;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  .aletta_bio {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+#aletta__bio_content {
+  height: 100%;
+  background: #663399;
+  line-height: 1.5em;
+}
+
+@media (min-width: 768px) {
+  #aletta__bio_content {
+    margin: 0;
+    width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .aletta p {
+    padding: 0 1.5em;
+  }
+}
+
+.owner__name,
+.owner__title {
+  position: relative;
+}
+
+.owner__name {
+  top: 10px;
+}
+
+.owner__title {
+  background: #0E8C8F;
+  line-height: 1.4;
+  margin: 0 auto;
+  border-radius: 70px 0px 70px 0px;
+  width: 80%;
+  align-self: flex-end;
+  transition: all .2s ease-in;
+}
+
+.owner__title:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .owner__title {
+    top: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .owner__title {
+    padding: 1em;
+  }
+}
+
+/*------Aletta Privacy Policy Styles------*/
+.aletta__llc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.address {
+  margin-top: 1em;
+  font-style: italic;
+}
+
+.address p + p {
+  margin: .1em 0;
+}
+
+/*------------Footer Styles----------*/
+#footer {
+  width: 100%;
+  background-color: #302F30;
+  position: relative;
+  bottom: 0;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5em 0 1em 0;
+}
+
+@media (min-width: 768px) {
+  .footer_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 768px) {
+  .col_footer {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col_footer:first-child {
+    border-right: 1px solid white;
+  }
+}
+
+@media (min-width: 768px) {
+  .social_footer {
+    border-left: 1px solid white;
+  }
+}
+
+.footer__link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_footer,
+.flex_footer {
+  padding: 10px 0;
+}
+
+.fab, .fa-facebook,
+.fab .fa-instagram,
+.fab .fa-etsy,
+.fab .fa-pinterest {
+  margin-right: 5px;
+}
+
+.etsy-link {
+  margin-right: 48px;
+}
+
+.insta-link {
+  margin-left: 5px;
+}
+
+.bottomFooter {
+  padding: 1em 0;
+  margin: 0 auto;
+}
+
+.mobile__link {
+  fill: #663399;
+}
+
+.banner__link {
+  font-size: 1.1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  padding: 4px 0;
+}
+
+.banner__link {
+  color: #fff;
+}
+
+.banner__link:visited {
+  color: #fff;
+}
+
+.banner__link:hover {
+  color: #0E8C8F;
+}
+
+.banner__link:active, .banner__link:focus {
+  color: #0E8C8F;
+}
+
+.banner__link::before,
+.banner__link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform .5s ease-out;
+}
+
+.banner__link::after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+.banner__link::before {
+  top: 0;
+  transform-origin: left;
+}
+
+.banner__link:hover::before,
+.banner__link:hover::after {
+  transform: scaleX(1);
+}
+
+.footer__link {
+  font-size: .95em;
+}
+
+.footer__link {
+  color: #fff;
+}
+
+.footer__link:visited {
+  color: #fff;
+}
+
+.footer__link:hover {
+  color: #0E8C8F;
+}
+
+.footer__link:active, .footer__link:focus {
+  color: #0E8C8F;
+}
+
+/*--------------Button Styles-------------------------*/
+.wpforms-submit-container {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .wpforms-submit-container > button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wpforms-submit-container > button {
+    width: 25%;
+  }
+}
+
+::placeholder {
+  padding-left: 0.2em;
+}
+
+textarea::placeholder {
+  padding-top: 0.3em;
+}
+
+.wpforms-submit-container > button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .wpforms-submit-container > button {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wpforms-submit-container > button {
+    width: 30%;
+  }
+}
+
+.wpforms-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .wpforms-container ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/*------------Mobile ContactUs Styles----------*/
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wpforms-image-choices-label {
+  display: none;
+}
+
+.wpforms-field-hp {
+  display: none;
+}
+
+#wpforms-134-field_0-container {
+  border-top: 1.5px solid #000;
+}
+
+/* image choices styling */
+.choice-1,
+.depth-1 {
+  display: flex;
+  color: #000;
+}
+
+.wpforms-container .wpforms-list-inline .wpforms-image-choices-modern li {
+  border: 1px solid #47999b;
+  transition: all 0.2s ease-in-out;
+}
+
+.wpforms-container .wpforms-list-inline .wpforms-image-choices-modern li:hover {
+  background-color: #47999b !important;
+  box-shadow: 0 10px 6px -6px rgba(102, 51, 153, 0.8);
+}
+
+/* Newsletter styling on frontpage */
+@media (min-width: 768px) {
+  #wpforms-107-field_1-container {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  #wpforms-107-field_3-container {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+
+#wpforms-107-field_3_1 {
+  width: fit-content;
+}
+
+label[for="wpforms-107-field_3_1"] {
+  color: #fff;
+  line-height: 1.5;
+}
+
+.wpforms-field-label-inline {
+  text-align: left;
+}
+
+.wpforms-validate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  border-top: 5px solid #0E8C8F;
+  padding-top: 1.5px;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .wpforms-validate {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wpforms-validate {
+    width: 50%;
+  }
+}
+
+.wpforms-error {
+  color: red;
+  padding-top: 0.5em;
+}
+
+.wpforms-field-container > div,
+#wpforms-134-field_0-container {
+  width: 100%;
+  padding: 1em 0;
+}
+
+.wpforms-field-container,
+#wpforms-134-field_0-container,
+#wpforms-134-field_1-container,
+#wpforms-134-field_3-container,
+#wpforms-140-field_0-container,
+#wpforms-140-field_3-container,
+#wpforms-140-field_4-container,
+#wpforms-140-field_5-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .wpforms-field-container,
+  #wpforms-134-field_0-container,
+  #wpforms-134-field_1-container,
+  #wpforms-134-field_3-container,
+  #wpforms-140-field_0-container,
+  #wpforms-140-field_3-container,
+  #wpforms-140-field_4-container,
+  #wpforms-140-field_5-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+#wpforms-134-field_5-container {
+  padding-bottom: 1em;
+}
+
+.wpforms-field ul li {
+  list-style-type: none;
+}
+
+.wpforms-field ul li label {
+  padding-left: 0.7em;
+}
+
+#wpforms-134-field_5-container,
+#wpforms-134-field_11-container,
+#wpforms-134-field_13-container,
+#wpforms-140-field_5-container {
+  border-bottom: 1px solid #000;
+}
+
+#wpforms-140-field_2-container {
+  border-top: 1px solid #000;
+}
+
+#wpforms-134-field_11-container > label,
+#wpforms-134-field_12-container > label,
+#wpforms-134-field_2-container > label,
+#wpforms-134-field_13-container > label {
+  font-weight: 600;
+  margin-bottom: 0.8em;
+}
+
+@media (min-width: 768px) {
+  #wpforms-134-field_0-container > label,
+  #wpforms-134-field_3-container > label,
+  #wpforms-134-field_1-container > label {
+    flex-basis: 25%;
+    margin: auto 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #wpforms-134-field_0-container > input,
+  #wpforms-134-field_1-container > input,
+  #wpforms-134-field_3-container > input {
+    flex-basis: 75%;
+  }
+}
+
+/*=-=-=Customer Support Page styles-=-=*/
+.aletta__contact {
+  color: #663399;
+}
+
+@media (min-width: 768px) {
+  #wpforms-140-field_0-container > label,
+  #wpforms-140-field_3-container > label,
+  #wpforms-140-field_4-container > label,
+  #wpforms-140-field_5-container > label,
+  #wpforms-140-field_6-container > label {
+    flex-basis: 25%;
+    margin: auto 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #wpforms-140-field_0-container > input,
+  #wpforms-140-field_3-container > input,
+  #wpforms-140-field_4-container > input,
+  #wpforms-140-field_5-container > input,
+  #wpforms-140-field_6-container > input {
+    flex-basis: 75%;
+  }
+}
+
+#wpforms-140-field_0-container > label,
+#wpforms-140-field_1-container > label,
+#wpforms-140-field_5-container > label,
+#wpforms-140-field_6-container > label,
+#wpforms-140-field_8-container > label,
+#wpforms-140-field_9-container > label,
+#wpforms-140-field_4-container > label {
+  padding: 0.5em 0;
+}
+
+.form__comment,
+.form__contact_number {
+  padding: 0 1.5em;
+}
+
+@media (min-width: 768px) {
+  .form__comment,
+  .form__contact_number {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form__comment,
+  .form__contact_number {
+    width: 50%;
+  }
+}
+
+.form__comment {
+  padding-bottom: 1em;
+  text-align: justify;
+}
+
+.form__contact_number {
+  padding-bottom: 0.5em;
+}
+
+div.wpforms-container div.wpforms-uploader {
+  border-radius: 15px !important;
+  color: #000 !important;
+  border: 2px solid #47999b;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 0.8em;
+}
+
+div.wpforms-container div.wpforms-uploader:hover {
+  background-color: #47999b !important;
+  color: #fff !important;
+}
+
+.wpforms-confirmation-container,
+#wpforms-confirmation-134 {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #47999b;
+  width: 85%;
+  margin: 1em auto;
+  border-radius: 10px;
+}
+
+.wpforms-confirmation-container p,
+#wpforms-confirmation-134 p {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+
+#wpforms-134-field_2 {
+  height: 7em;
+}
+
+svg[focusable="false"] {
+  fill: #000;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 5px #663399;
+  outline: #663399;
+  transition: background-color 0.7s ease-out;
+}
+
+input[id="mc-embedded-subscribe"] {
+  width: 100%;
+}
+
+/*------------Layout Container Styles----------*/
+.main_container {
+  max-width: 75em;
+  margin: 0 auto;
+  padding: 3em 0 0 0;
+  padding-bottom: 2em;
+}
+
+.flex_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .flex_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .lg-thumb-outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/*------------Nav SVG Icon Styles----------------*/
+.nav-icons {
+  fill: #fff;
+  transition: fill .3s ease-in;
+}
+
+.nav-icons:hover {
+  fill: #663399;
+}
+
+/*------------Banner Styles----------------------*/
+.logo_img {
+  position: relative;
+  width: 200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .logo_img {
+    width: 130px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo_img {
+    width: 200px;
+  }
+}
+
+.blur {
+  animation: blur 2.5s;
+}
+
+@keyframes blur {
+  0%, 100% {
+    -webkit-filter: blur(10px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.banner_img {
+  width: 100%;
+}
+
+/*------------Select Your Bag Styles----------*/
+.gallery_feature--img {
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+
+@media (min-width: 768px) {
+  .gallery_feature--img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.gallery__thumb--pic {
+  object-fit: cover;
+  height: 60px;
+  width: 60px;
+}
+
+@media (min-width: 768px) {
+  .gallery__thumb--pic {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/*------------Customer Review Styles----------*/
+.img__avatar img {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  border: 5px solid #0E8C8F;
+}
+
+/*------------Who Am I Styles----------*/
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+#img__wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  #img__wrapper {
+    width: 40%;
+    margin: 0;
+  }
+}
+
+.side-nav,
+.hamburger-menu {
+  position: fixed;
+}
+
+.side-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  border-radius: 10% 0 0% 70%;
+  background: rgba(96, 96, 96, 0.7);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.nav-bar {
+  transform: translateX(150px);
+}
+
+#site__wrapper {
+  transition: 0.5s;
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 2.5em;
+  padding: 1em 0;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+  height: 80px;
+  width: 80px;
+  top: 10px;
+  right: -15px;
+  margin-right: 20px;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+.line {
+  position: absolute;
+  top: 9.8px;
+  right: 4.2px;
+  height: 3px;
+  width: 40px;
+  background: #663399;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.line1 {
+  transform: translateY(-10px);
+  top: 10px;
+}
+
+.line3 {
+  transform: translateY(10px);
+}
+
+.change .line1 {
+  transform: translateY(5px) rotate(-45deg);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.change-side-nav {
+  width: 200px;
+}
+
+.company__name {
+  font-family: "Diplomata SC", cursive;
+  color: #000;
+  font-size: 2em;
+  display: block;
+  text-align: center;
+}
+
+.title__primary {
+  font-size: .75em;
+  padding: 0 1em;
+}
+
+@media (min-width: 768px) {
+  .title__primary {
+    font-size: .5em;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title__primary {
+    font-size: .8em;
+  }
+}
+
+.title__secondary,
+.customer__title {
+  font-size: 1em;
+}
+
+.title__tertiary,
+.customer__name {
+  text-align: center;
+  font-size: .95em;
+  font-weight: bold;
+}
+
+.title__quaternary {
+  text-align: center;
+}
+
+.owner__name {
+  font-size: 1.4em;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .owner__name {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .owner__name {
+    padding: 1em;
+  }
+}
+
+.owner__title {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .owner__title {
+    font-size: 1.4em;
+  }
+}
+
+.owner__text {
+  text-align: justify;
+  padding: 1em;
+}
+
+@media (min-width: 1024px) {
+  .owner__text {
+    font-size: 1.2em;
+  }
+}
+
+.bio__title {
+  width: 100%;
+}
+
+.text__content,
+.customer__content {
+  font-size: 1.2em;
+}
+
+@media (min-width: 768px) {
+  .text__content,
+  .customer__content {
+    font-size: 1.1em;
+  }
+}
+
+.txt_jstfy {
+  text-align: justify;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.white_txt {
+  color: #fff;
+}
+
+.footer_title {
+  text-align: center;
+  color: #0E8C8F;
+  font-size: 1.5em;
+}
+
+#first_line {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+#first__heading {
+  text-align: center;
+}
+
+.subscribe__title {
+  padding: 0 0 1em;
+  font-size: 1.5em;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
